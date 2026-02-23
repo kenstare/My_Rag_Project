@@ -241,7 +241,7 @@ results = retriever.invoke(query)  # Execute search
 ### **Basic RAG Chain** (Cell 8: "Conversational RAG")
 ```python
 # 1. Create the language model
-llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0, openai_api_key=api_key)
+llm = ChatOpenAI(model="gpt-4o-mini", temperature=0, openai_api_key=api_key)
 
 # 2. Create retriever
 retriever = vectorstore.as_retriever(search_type="similarity", search_kwargs={"k": 2})
